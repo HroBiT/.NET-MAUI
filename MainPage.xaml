@@ -6,41 +6,38 @@
              x:Class="MauiApp1.MainPage">
 
     <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
-        <!-- Display -->
+
         <Label Text="{Binding CurrentInput}" FontSize="24" TextColor="#2196F3" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="10" Grid.Row="0" Grid.ColumnSpan="4"/>
 
-        <!-- Row 1 -->
+
         <Button Text="7" Clicked="OnButtonClicked" CommandParameter="7" BackgroundColor="#2196F3" TextColor="White" Grid.Row="1" Grid.Column="0"/>
         <Button Text="8" Clicked="OnButtonClicked" CommandParameter="8" BackgroundColor="#2196F3" TextColor="White" Grid.Row="1" Grid.Column="1"/>
         <Button Text="9" Clicked="OnButtonClicked" CommandParameter="9" BackgroundColor="#2196F3" TextColor="White" Grid.Row="1" Grid.Column="2"/>
         <Button Text="/" Clicked="OnButtonClicked" CommandParameter="/" BackgroundColor="#FF5722" TextColor="White" Grid.Row="1" Grid.Column="3"/>
 
-        <!-- Row 2 -->
+
         <Button Text="4" Clicked="OnButtonClicked" CommandParameter="4" BackgroundColor="#2196F3" TextColor="White" Grid.Row="2" Grid.Column="0"/>
         <Button Text="5" Clicked="OnButtonClicked" CommandParameter="5" BackgroundColor="#2196F3" TextColor="White" Grid.Row="2" Grid.Column="1"/>
         <Button Text="6" Clicked="OnButtonClicked" CommandParameter="6" BackgroundColor="#2196F3" TextColor="White" Grid.Row="2" Grid.Column="2"/>
         <Button Text="*" Clicked="OnButtonClicked" CommandParameter="*" BackgroundColor="#FF5722" TextColor="White" Grid.Row="2" Grid.Column="3"/>
 
-        <!-- Row 3 -->
+
         <Button Text="1" Clicked="OnButtonClicked" CommandParameter="1" BackgroundColor="#2196F3" TextColor="White" Grid.Row="3" Grid.Column="0"/>
         <Button Text="2" Clicked="OnButtonClicked" CommandParameter="2" BackgroundColor="#2196F3" TextColor="White" Grid.Row="3" Grid.Column="1"/>
         <Button Text="3" Clicked="OnButtonClicked" CommandParameter="3" BackgroundColor="#2196F3" TextColor="White" Grid.Row="3" Grid.Column="2"/>
         <Button Text="-" Clicked="OnButtonClicked" CommandParameter="-" BackgroundColor="#FF5722" TextColor="White" Grid.Row="3" Grid.Column="3"/>
 
-        <!-- Row 4 -->
-        <!-- Przycisk C (Clear) -->
+
         <Button Text="." CommandParameter="." Clicked="OnButtonClicked" BackgroundColor="#FF5722" TextColor="White" Grid.Row="4" Grid.Column="0"/>
 
-        <!-- Przycisk "." -->
+
         <Button Text="0" Clicked="OnButtonClicked" CommandParameter="0" BackgroundColor="#2196F3" TextColor="White" Grid.Row="4" Grid.Column="1"/>
-        <!-- Przycisk "=" -->
+
         <Button Text="=" Clicked="OnButtonClicked" CommandParameter="=" BackgroundColor="#4CAF50" TextColor="White" Grid.Row="4" Grid.Column="2"/>
 
-        <!-- Przycisk "+" -->
+
         <Button Text="+" Clicked="OnButtonClicked" CommandParameter="+" BackgroundColor="#FF5722" TextColor="White" Grid.Row="4" Grid.Column="3"/>
 
-        <!-- Additional features -->
-        <!-- Przycisk "^" -->
         <Button Text="^" Clicked="OnButtonClicked" CommandParameter="^" BackgroundColor="#FF5722" TextColor="White" Grid.Row="5" Grid.Column="0"/>
 
         <Button Text="History" Clicked="OnButtonClicked" CommandParameter="History" BackgroundColor="#607D8B" TextColor="White" Grid.Row="5" Grid.Column="1"/>
